@@ -41,7 +41,7 @@ public class BeanListFactoryBean<T> extends AbstractTypeAwareSupport<T> implemen
 	@NonNull
 	public List<T> getObject() {
 
-		List<T> beans = new ArrayList<T>();
+		List<T> beans = new ArrayList<>();
 		beans.addAll(getBeans());
 		Collections.sort(beans, COMPARATOR);
 

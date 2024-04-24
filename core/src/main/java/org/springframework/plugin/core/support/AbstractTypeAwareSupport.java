@@ -141,7 +141,7 @@ public abstract class AbstractTypeAwareSupport<T>
 		private final boolean eagerInit;
 		private final Collection<Class<?>> exclusions;
 
-		private boolean frozen = false;
+		private boolean frozen;
 		private @Nullable Collection<Object> components;
 
 		/**

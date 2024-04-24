@@ -124,7 +124,7 @@ class SimplePluginRegistryUnitTest {
 	@Test
 	void handlesAddingNullPluginsCorrecty() throws Exception {
 
-		List<SamplePlugin> plugins = new ArrayList<SamplePlugin>();
+		List<SamplePlugin> plugins = new ArrayList<>();
 		plugins.add(null);
 
 		registry = SimplePluginRegistry.of(plugins);

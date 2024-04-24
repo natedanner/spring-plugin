@@ -44,7 +44,7 @@ class BeanListFactoryBeanUnitTest {
 	@BeforeEach
 	void setUp() {
 
-		factory = new BeanListFactoryBean<Ordered>();
+		factory = new BeanListFactoryBean<>();
 		factory.setApplicationContext(context);
 		factory.setType(Ordered.class);
 		factory.afterPropertiesSet();

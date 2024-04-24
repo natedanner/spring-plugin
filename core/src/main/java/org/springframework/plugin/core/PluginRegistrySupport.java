@@ -18,6 +18,7 @@ package org.springframework.plugin.core;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import org.springframework.util.Assert;
@@ -76,7 +77,7 @@ public abstract class PluginRegistrySupport<T extends Plugin<S>, S> implements P
 		Assert.notNull(plugins, "Plugins must not be null!");
 
 		return plugins.stream() //
-				.filter(it -> it != null) //
+				.filter(Objects::nonNull) //
 				.collect(Collectors.toList());
 	}
 
